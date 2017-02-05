@@ -1,16 +1,14 @@
-// Text is blinking green and red
-
 <script type="text/javascript">
 window.onload=function() {
-	var isGreen = false;
+	var isRed = false;
 	var selectAll = document.body;
 	setInterval(function() {
-		if (!isGreen) {
-	        selectAll.style.color = "green";
-	        isGreen = true;
+		if (!isRed {
+	        selectAll.style.color = "red";
+	        isRed = true;
 	    } else {
-	    	selectAll.style.color = "red";
-	    	isGreen = false;
+	    	selectAll.style.color = "green";
+	    	isRed = false;
 	    }
     }, 100);
 }
